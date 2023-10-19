@@ -27,7 +27,7 @@ def tokenizing(document): #function to tokenise the document with parameter as d
     return tokens_stemmed #returning tokens which are stemmed and free of stopwords
 
 
-corpusroot = (r"./US_Inaugural_Addresses") #initializing the path to the documents 
+corpusroot = (r"D:\Personal\Academics\UTA\3rd semester\Data Mining\P1\P1\US_Inaugural_Addresses") #initializing the path to the documents 
 stemmer = PorterStemmer() #assigning the typr of stemming
 tokenizer = RegexpTokenizer(r"[a-zA-Z]+") #assigning the type of tokenizer
 document_term_frequency = {} #dictionary to keep term frequency of each word for all the documents
@@ -121,8 +121,8 @@ def query(qstring): #function to search a query string in a folder contianing fi
     query_term_frequency = {} #creating a term frequency dictionary for query
     query_length = 0 #initialising the length of query to zero
     documents = {} # creating a dictionary to store filname for that token in query
-    sentence = tokenizing(sentence) #stemming the query string
-    normalise() #calling normalisation function 
+    sentence = tokenizing(sentence) #stemming the query
+    normalise() #calling normalisation function
     for token in sentence: #starting the loops to go through differet tokens in the query
         if token not in inverted_index: #if token is not already presented in inverted index weight dictionary
             inverted_index[token]=Counter({'None':0}) #then add that token to the dictionary
