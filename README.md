@@ -1,4 +1,4 @@
-# tfidf-search-engine
+# tf-idf Search Engine
 
 ## Overview
 
