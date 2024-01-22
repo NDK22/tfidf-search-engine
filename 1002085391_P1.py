@@ -1,8 +1,3 @@
-#Nikhil Das Karavatt
-#1020085391
-#Data Mining Assignment 1
-
-
 import os
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
